@@ -61,38 +61,38 @@ The installation of this tool can be done using the `anaconda`, https://www.anac
 ## Features
 ### Downloading Prices<a id="1">[6]</a> 
 
-<img src="https://github.com/tooyipjee/py-finance/blob/master/reference/images/MBMR_price.png" width="80%">.
+<img src="https://github.com/tooyipjee/py-finance/blob/main/reference/images/MBMR_price.png" width="80%">.
 
 Downloaded and filtered prices from Yahoo Finance and Investing.com with the Index trend.
 ### Optimum Portfolio<a id="1">[5]</a> 
 
-<img src="https://github.com/tooyipjee/py-finance/blob/master/reference/images/efficient_frontier.png" width="70%">.
+<img src="https://github.com/tooyipjee/py-finance/blob/main/reference/images/efficient_frontier.png" width="70%">.
 
 Efficient frontier.
 
-<img src="https://github.com/tooyipjee/py-finance/blob/master/reference/images/weights_bar.png" width="70%">.
+<img src="https://github.com/tooyipjee/py-finance/blob/main/reference/images/weights_bar.png" width="70%">.
 
 Distribution of stocks for optimum portfolio.
 
-<img src="https://github.com/tooyipjee/py-finance/blob/master/reference/images/which_stock.png" width="70%">.
+<img src="https://github.com/tooyipjee/py-finance/blob/main/reference/images/which_stock.png" width="70%">.
 
 Volatility-return scatter plot of symbols.
 
 ### Fast Fourier Transform<a id="1">[3]</a> 
 
-<img src="https://github.com/tooyipjee/py-finance/blob/master/reference/images/MBMR_fft.png" width="80%">.
+<img src="https://github.com/tooyipjee/py-finance/blob/main/reference/images/MBMR_fft.png" width="80%">.
 
 Periodicity of share price data. High peaks mean that there is a periodic "signal" with a period the inverse of the the value in the x-axis in days. (1/x-axis value days)
 
 ### Monte Carlo Siumlation
 
-<img src="https://github.com/tooyipjee/py-finance/blob/master/reference/images/MBMR_mc_drift.png" width="80%">.
+<img src="https://github.com/tooyipjee/py-finance/blob/main/reference/images/MBMR_mc_drift.png" width="80%">.
 
 Monte Carlo simulation of stock returns for the next __ days.
 
 ### Forecast<a id="1">[4]</a> 
 
-<img src="https://github.com/tooyipjee/py-finance/blob/master/reference/images/forecast_LSTM_MBMR.png" width="80%">.
+<img src="https://github.com/tooyipjee/py-finance/blob/main/reference/images/forecast_LSTM_MBMR.png" width="80%">.
 
 Forecasted share price.
 
