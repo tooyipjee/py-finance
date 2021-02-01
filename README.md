@@ -1,6 +1,7 @@
-# Personal Finance
+# Py-Finance
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/L3L33I8CT)
 
-Personal finance is an analysis tool that performs various time-series analysis on stock data, finds the optimum portfolio of a group of stocks and generate forecast share prices.  
+Py-Finance is an analysis tool that performs various time-series analysis on stock data, finds the optimum portfolio of a group of stocks and generate forecast share prices.  
 
 * Tool to download **real-time** share price from Yahoo Finance and Investing.com.
 * **Time-series analysis** on share price data. Butterworth filtering to smooth the prices and complete incomplete data that the sources above can sometimes be introduced with data from emerging markets, and Fast Fourier Transforms (FFT) to identify any dominant periodicity in the share price.
@@ -9,7 +10,7 @@ Personal finance is an analysis tool that performs various time-series analysis 
 
 ## How It Works
 
-1. Personal finance contains a Portfolio class that wraps over two pre-existing libraries, `PyPortfolioOpt`<a id="1">[1]</a>  and `Stock Prediction Models`<a id="1">[2]</a> . 
+1. Py-Finance contains a Portfolio class that wraps over two pre-existing libraries, `PyPortfolioOpt`<a id="1">[1]</a>  and `Stock Prediction Models`<a id="1">[2]</a> . 
 2. The Portfolio class string input which should point to a CSV file that contains the symbols of the stocks you want to analyse.
 3. The `download stocks()` function downloads the stock price for the specified time horizon and saves the data in the `Portfolio()` object.  
 4. The `Portfolio` object contains methods that will perform the analysis on the saved stocks which is why the `download_stocks()` function should be run, followed by `create_portfolio()`.
@@ -23,10 +24,10 @@ The installation of this tool can be done using the `anaconda`, https://www.anac
 1. Clone the repository using the command below.
 
     ```sh
-    $ git clone https://github.com/tooyipjee/personal-finance.git
+    $ git clone https://github.com/tooyipjee/py-finance.git
     ```
 
-2. Navigate to the `personal-finance` directory and create the environment which installs all the necessary libraries by running the following command.
+2. Navigate to the `py-finance` directory and create the environment which installs all the necessary libraries by running the following command.
 
     ```sh
     $ conda env create -f environment.yml
@@ -38,17 +39,17 @@ The installation of this tool can be done using the `anaconda`, https://www.anac
     $ conda activate py-finance
     ```
     
-3. Run the Spyder IDE, or the IDE of your choice.
+3. Run the Spyder IDE, or the IDE of your choice. In the command line interface, run the following.
 
     ```sh
     $ spyder
     ```
     
-5. Edit this line of `main.py` to point towards the `personal-finance/` directory. 
+5. Edit this line of `main.py` to point towards the `py-finance/` directory. If using default Github settings, it be as easy as replacing the ###### to your User Account Folder.
 
     ```py
     ...
-    $ wd = "C:/Users/tooyi/Documents/GitHub/personal-finance/"
+    $ wd = "C:/Users/######/Documents/GitHub/py-finance/"
     ...
     ```
     
@@ -59,25 +60,41 @@ The installation of this tool can be done using the `anaconda`, https://www.anac
     ```
 ## Features
 ### Downloading Prices<a id="1">[6]</a> 
-![alt text](https://github.com/tooyipjee/personal-finance/blob/master/reference/images/MBMR_price.png)
+
+<img src="https://github.com/tooyipjee/py-finance/blob/master/reference/images/MBMR_price.png" width="80%">.
+
 Downloaded and filtered prices from Yahoo Finance and Investing.com with the Index trend.
 ### Optimum Portfolio<a id="1">[5]</a> 
-![alt text](https://github.com/tooyipjee/personal-finance/blob/master/reference/images/efficient_frontier.png)
-Efficient frontier.
-![alt text](https://github.com/tooyipjee/personal-finance/blob/master/reference/images/weights_bar.png)
-Distribution of stocks for optimum portfolio.
-![alt text](https://github.com/tooyipjee/personal-finance/blob/master/reference/images/which_stock.png)
-Volatility-return scatter plot of symbols.
-### Fast Fourier Transform<a id="1">[3]</a> 
-![alt text](https://github.com/tooyipjee/personal-finance/blob/master/reference/images/MBMR_fft.png)
-Periodicity of share price data. High peaks mean that there is a periodic "signal" with a period the inverse of the the value in the x-axis in days. (1/x-axis value days)
-### Monte Carlo Siumlation
-![alt text](https://github.com/tooyipjee/personal-finance/blob/master/reference/images/MBMR_mc_drift.png)
-Monte Carlo simulation of stock returns for the next __ days.
-### Forecast<a id="1">[4]</a> 
-![alt text](https://github.com/tooyipjee/personal-finance/blob/master/reference/images/forecast_LSTM_MBMR.png)
-Forecasted share price.
 
+<img src="https://github.com/tooyipjee/py-finance/blob/master/reference/images/efficient_frontier.png" width="70%">.
+
+Efficient frontier.
+
+<img src="https://github.com/tooyipjee/py-finance/blob/master/reference/images/weights_bar.png" width="70%">.
+
+Distribution of stocks for optimum portfolio.
+
+<img src="https://github.com/tooyipjee/py-finance/blob/master/reference/images/which_stock.png" width="70%">.
+
+Volatility-return scatter plot of symbols.
+
+### Fast Fourier Transform<a id="1">[3]</a> 
+
+<img src="https://github.com/tooyipjee/py-finance/blob/master/reference/images/MBMR_fft.png" width="80%">.
+
+Periodicity of share price data. High peaks mean that there is a periodic "signal" with a period the inverse of the the value in the x-axis in days. (1/x-axis value days)
+
+### Monte Carlo Siumlation
+
+<img src="https://github.com/tooyipjee/py-finance/blob/master/reference/images/MBMR_mc_drift.png" width="80%">.
+
+Monte Carlo simulation of stock returns for the next __ days.
+
+### Forecast<a id="1">[4]</a> 
+
+<img src="https://github.com/tooyipjee/py-finance/blob/master/reference/images/forecast_LSTM_MBMR.png" width="80%">.
+
+Forecasted share price.
 
 ## Bugs and feedback
 
