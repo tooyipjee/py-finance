@@ -1,4 +1,5 @@
 # Personal Finance
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/L3L33I8CT)
 
 Personal finance is an analysis tool that performs various time-series analysis on stock data, finds the optimum portfolio of a group of stocks and generate forecast share prices.  
 
