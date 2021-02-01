@@ -39,17 +39,17 @@ The installation of this tool can be done using the `anaconda`, https://www.anac
     $ conda activate py-finance
     ```
     
-3. Run the Spyder IDE, or the IDE of your choice.
+3. Run the Spyder IDE, or the IDE of your choice. In the command line interface, run the following.
 
     ```sh
     $ spyder
     ```
     
-5. Edit this line of `main.py` to point towards the `personal-finance/` directory. 
+5. Edit this line of `main.py` to point towards the `personal-finance/` directory. If using default Github settings, it be as easy as replacing the ###### to your User Account Folder.
 
     ```py
     ...
-    $ wd = "C:/Users/tooyi/Documents/GitHub/personal-finance/"
+    $ wd = "C:/Users/######/Documents/GitHub/personal-finance/"
     ...
     ```
     
