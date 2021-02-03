@@ -1,5 +1,8 @@
 # Py-Finance
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/L3L33I8CT)
+<p align="center">
+  <img width="80%" src="https://github.com/tooyipjee/py-finance/blob/main/reference/images/Py-Finance.png">
+</p>
 
 Py-Finance is an analysis tool that performs various time-series analysis on stock data, finds the optimum portfolio of a group of stocks and generate forecast share prices.  
 
@@ -15,7 +18,6 @@ Py-Finance is an analysis tool that performs various time-series analysis on sto
 3. The `download stocks()` function downloads the stock price for the specified time horizon and saves the data in the `Portfolio()` object.  
 4. The `Portfolio` object contains methods that will perform the analysis on the saved stocks which is why the `download_stocks()` function should be run, followed by `create_portfolio()`.
 5. Generation of synthetic forecast data can also be performed on the symbols and defaults to using the whole period of downloaded stock price to train the generative models. 
-
 
 ## Installation
 
